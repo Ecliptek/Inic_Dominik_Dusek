@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Dušek CyberSecurity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+<header class="bg-light border-bottom d-flex justify-content-between align-items-center p-3 shadow-sm">
+    <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="slike/Dusek.png" alt="Logo" width="50" height="50" class="me-2">
+        <span class="fs-4 fw-bold">Dušek CyberSecurity</span>
+    </a>
+    <button class="btn btn-primary rounded-circle shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu">
+        ☰
+    </button>
+</header>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mainMenu" aria-labelledby="mainMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mainMenuLabel">Izbornik</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Zatvori"></button>
+    </div>
+    <div class="offcanvas-body">
+        <nav class="nav flex-column">
+            <a class="nav-link" href="index.html">Početna</a>
+            <a class="nav-link" href="o_nama.html">O nama</a>
+            <a class="nav-link" href="usluge.html">Usluge</a>
+            <a class="nav-link" href="novosti.html">Novosti</a>
+            <a class="nav-link" href="zaposlenici.html">Zaposlenici</a>
+            <a class="nav-link active" href="kontakt.html">Kontakt</a>
+            <a class="nav-link" href="password_test.html">Testiranje zaporke</a>
+        </nav>
+    </div>
+</div>
+
+<main class="container my-5">
+    <h1 class="text-center mb-5 fw-bold">Kontaktirajte nas</h1>
+
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-center mb-4">Pošaljite nam poruku</h5>
+
+                    <form action="https://formspree.io/f/xwprldqr" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ime i prezime</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Vaše ime" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email adresa</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="ime@primjer.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Poruka</label>
+                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Vaša poruka..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2 shadow-sm">📩 Pošalji</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="bg-white shadow-sm p-4 rounded">
+                <h5 class="mb-3">Naša lokacija</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.google.com/maps?q=Zagreb+Croatia&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <h5 class="mb-3">Kontakt podaci</h5>
+                <p><strong>Adresa:</strong> Primjer Ulica 1, 10000 Zagreb</p>
+                <p><strong>Telefon:</strong> +385 1 234 5678</p>
+                <p><strong>Email:</strong> info@dusek-cybersecurity.hr</p>
+                <p><strong>Radno vrijeme:</strong> Pon - Pet 8:00 - 16:00</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-light mt-auto">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Kontakt</h5>
+                <p>Adresa: Primjer Ulica 1, 10000 Zagreb</p>
+                <p>Telefon: +385 1 234 5678</p>
+                <p>Email: info@dusek-cybersecurity.hr</p>
+                <p>Radno vrijeme: Pon - Pet 8:00 - 16:00</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Pravne informacije</h5>
+                <ul class="list-unstyled">
+                    <li><a href="privatnost.html" class="text-light">Politika privatnosti</a></li>
+                    <li><a href="uvjeti.html" class="text-light">Uvjeti korištenja</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Pratite nas</h5>
+                <a href="#" class="text-light me-2">LinkedIn</a>
+                <a href="#" class="text-light me-2">Twitter</a>
+                <a href="#" class="text-light">Facebook</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

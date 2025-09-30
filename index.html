@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dušek CyberSecurity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bg-light border-bottom d-flex justify-content-between align-items-center p-3">
+    <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="slike/Dusek.png" alt="Logo" width="50" height="50" class="me-2">
+        <span class="fs-4 fw-bold">Dušek CyberSecurity</span>
+    </a>
+
+    
+    <button class="btn btn-primary rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu">
+        ☰
+    </button>
+</header>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mainMenu" aria-labelledby="mainMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mainMenuLabel">Izbornik</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Zatvori"></button>
+    </div>
+    <div class="offcanvas-body">
+        <nav class="nav flex-column">
+            <a class="nav-link" href="o_nama.html">O nama</a>
+            <a class="nav-link" href="usluge.html">Usluge</a>
+            <a class="nav-link" href="novosti.html">Novosti</a>
+            <a class="nav-link" href="zaposlenici.html">Zaposlenici</a>
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+            <a class="nav-link" href="password_test.html">Testiranje zaporke</a>
+        </nav>
+    </div>
+</div>
+
+<main class="container my-5">
+
+    <section class="mb-5 text-center">
+        <img src="slike/network-server-room-network-server-room-servers-high-performance-computers-running-processes-114138719.webp" alt="Cybersecurity Banner" class="img-fluid rounded mb-4">
+        <h1 class="mb-3">Dobrodošli u Dušek CyberSecurity</h1>
+        <p class="lead">
+            Mi smo stručnjaci za kibernetičku sigurnost, specijalizirani za penetracijsko testiranje,
+            održavanje servera i mrežnih sustava te proaktivnu zaštitu vaših digitalnih resursa.
+            Naš cilj je osigurati pouzdanost, sigurnost i miran san za vaše poslovanje.
+        </p>
+    </section>
+
+    <section class="row text-center mb-5">
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <img src="slike/49e75b22-9815-45e3-bf40-9a42f8af6ef8.jfif" class="card-img-top" alt="Pen Testing">
+                <div class="card-body">
+                    <h5 class="card-title">Penetracijsko testiranje</h5>
+                    <p class="card-text">Identificiramo i uklanjamo ranjivosti u vašim sustavima prije nego što to učini netko drugi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <img src="slike/a2803f67-7ad3-4158-bbf1-80018cb2ded8.jfif" class="card-img-top" alt="Server Maintenance">
+                <div class="card-body">
+                    <h5 class="card-title">Održavanje servera</h5>
+                    <p class="card-text">Nadziremo i održavamo vaše servere 24/7, osiguravajući maksimalnu dostupnost i stabilnost.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <img src="slike/dad23524-e6ed-4711-8efe-0b33aef33cac.jfif" class="card-img-top" alt="Network Security">
+                <div class="card-body">
+                    <h5 class="card-title">Sigurnost mreže</h5>
+                    <p class="card-text">Implementiramo napredne sigurnosne protokole kako bi vaše mreže bile zaštićene od napada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+        <h2 class="mb-3">Naš pristup sigurnosti</h2>
+        <p class="lead">
+            Svaki projekt započinjemo detaljnom analizom vaših potreba, nakon čega razvijamo strategiju zaštite
+            prilagođenu vašem poslovanju. Naš tim vjeruje u transparentnu komunikaciju i dugoročnu suradnju.
+        </p>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-light mt-auto">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Kontakt</h5>
+                <p>Adresa: Primjer Ulica 1, 10000 Zagreb</p>
+                <p>Telefon: +385 1 234 5678</p>
+                <p>Email: info@dusek-cybersecurity.hr</p>
+                <p>Radno vrijeme: Pon - Pet 8:00 - 16:00</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Pravne informacije</h5>
+                <ul class="list-unstyled">
+                    <li><a href="privatnost.html" class="text-light">Politika privatnosti</a></li>
+                    <li><a href="uvjeti.html" class="text-light">Uvjeti korištenja</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Pratite nas</h5>
+                <a href="#" class="text-light me-2">LinkedIn</a>
+                <a href="#" class="text-light me-2">Twitter</a>
+                <a href="#" class="text-light">Facebook</a>
+                <form class="mt-3">
+                    <label for="newsletter" class="form-label">Prijavite se na newsletter</label>
+                    <input type="email" id="newsletter" class="form-control mb-2" placeholder="Vaš email">
+                    <button type="submit" class="btn btn-primary w-100">Prijava</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
